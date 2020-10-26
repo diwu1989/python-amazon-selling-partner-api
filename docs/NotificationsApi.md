@@ -1,4 +1,4 @@
-# swagger_client.NotificationsApi
+# amazon_selling_partner_api.NotificationsApi
 
 All URIs are relative to */*
 
@@ -24,12 +24,12 @@ Creates a destination resource to receive notifications. The createDestination A
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.NotificationsApi()
+api_instance = amazon_selling_partner_api.NotificationsApi()
 
 try:
     api_instance.create_destination()
@@ -66,12 +66,12 @@ Creates a subscription for the specified notification type to be delivered to th
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.NotificationsApi()
+api_instance = amazon_selling_partner_api.NotificationsApi()
 
 try:
     api_instance.create_subscription()
@@ -108,13 +108,13 @@ Deletes the destination that you specify. The deleteDestination API is grantless
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.NotificationsApi()
- = swagger_client.null() #  | The identifier for the destination that you want to delete.
+api_instance = amazon_selling_partner_api.NotificationsApi()
+ = amazon_selling_partner_api.null() #  | The identifier for the destination that you want to delete.
 
 try:
     api_instance.delete_destination()
@@ -154,13 +154,13 @@ Deletes the subscription indicated by the subscription identifier and notificati
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.NotificationsApi()
- = swagger_client.null() #  | The identifier for the subscription that you want to delete.
+api_instance = amazon_selling_partner_api.NotificationsApi()
+ = amazon_selling_partner_api.null() #  | The identifier for the subscription that you want to delete.
 
 try:
     api_instance.delete_subscription_by_id()
@@ -200,13 +200,13 @@ Returns information about the destination that you specify. The getDestination A
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.NotificationsApi()
- = swagger_client.null() #  | The identifier generated when you created the destination.
+api_instance = amazon_selling_partner_api.NotificationsApi()
+ = amazon_selling_partner_api.null() #  | The identifier generated when you created the destination.
 
 try:
     api_instance.get_destination()
@@ -246,12 +246,12 @@ Returns information about all destinations. The getDestinations API is grantless
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.NotificationsApi()
+api_instance = amazon_selling_partner_api.NotificationsApi()
 
 try:
     api_instance.get_destinations()
@@ -288,12 +288,12 @@ Returns information about subscriptions of the specified notification type. You 
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.NotificationsApi()
+api_instance = amazon_selling_partner_api.NotificationsApi()
 
 try:
     api_instance.get_subscription()
@@ -330,13 +330,13 @@ Returns information about a subscription for the specified notification type. Th
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.NotificationsApi()
- = swagger_client.null() #  | The identifier for the subscription that you want to get.
+api_instance = amazon_selling_partner_api.NotificationsApi()
+ = amazon_selling_partner_api.null() #  | The identifier for the subscription that you want to get.
 
 try:
     api_instance.get_subscription_by_id()

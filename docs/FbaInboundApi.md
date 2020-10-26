@@ -1,4 +1,4 @@
-# swagger_client.FbaInboundApi
+# amazon_selling_partner_api.FbaInboundApi
 
 All URIs are relative to */*
 
@@ -34,15 +34,15 @@ Returns information needed to confirm a shipment for pre-order. Call this operat
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.FbaInboundApi()
- = swagger_client.null() #  | A shipment identifier originally returned by the createInboundShipmentPlan operation.
- = swagger_client.null() #  | Date that the shipment must arrive at the Amazon fulfillment center to avoid delivery promise breaks for pre-ordered items. Must be in YYYY-MM-DD format. The response to the getPreorderInfo operation returns this value.
- = swagger_client.null() #  | A marketplace identifier. Specifies the marketplace the shipment is tied to.
+api_instance = amazon_selling_partner_api.FbaInboundApi()
+ = amazon_selling_partner_api.null() #  | A shipment identifier originally returned by the createInboundShipmentPlan operation.
+ = amazon_selling_partner_api.null() #  | Date that the shipment must arrive at the Amazon fulfillment center to avoid delivery promise breaks for pre-ordered items. Must be in YYYY-MM-DD format. The response to the getPreorderInfo operation returns this value.
+ = amazon_selling_partner_api.null() #  | A marketplace identifier. Specifies the marketplace the shipment is tied to.
 
 try:
     api_instance.confirm_preorder(, , )
@@ -84,13 +84,13 @@ Confirms that the seller accepts the Amazon-partnered shipping estimate, agrees 
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.FbaInboundApi()
- = swagger_client.null() #  | A shipment identifier originally returned by the createInboundShipmentPlan operation.
+api_instance = amazon_selling_partner_api.FbaInboundApi()
+ = amazon_selling_partner_api.null() #  | A shipment identifier originally returned by the createInboundShipmentPlan operation.
 
 try:
     api_instance.confirm_transport()
@@ -130,13 +130,13 @@ Returns a new inbound shipment based on the specified shipmentId that was return
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.FbaInboundApi()
- = swagger_client.null() #  | A shipment identifier originally returned by the createInboundShipmentPlan operation.
+api_instance = amazon_selling_partner_api.FbaInboundApi()
+ = amazon_selling_partner_api.null() #  | A shipment identifier originally returned by the createInboundShipmentPlan operation.
 
 try:
     api_instance.create_inbound_shipment()
@@ -176,12 +176,12 @@ Returns one or more inbound shipment plans, which provide the information you ne
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.FbaInboundApi()
+api_instance = amazon_selling_partner_api.FbaInboundApi()
 
 try:
     api_instance.create_inbound_shipment_plan()
@@ -218,13 +218,13 @@ Initiates the process of estimating the shipping cost for an inbound shipment by
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.FbaInboundApi()
- = swagger_client.null() #  | A shipment identifier originally returned by the createInboundShipmentPlan operation.
+api_instance = amazon_selling_partner_api.FbaInboundApi()
+ = amazon_selling_partner_api.null() #  | A shipment identifier originally returned by the createInboundShipmentPlan operation.
 
 try:
     api_instance.estimate_transport()
@@ -264,13 +264,13 @@ Returns a bill of lading for a Less Than Truckload/Full Truckload (LTL/FTL) ship
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.FbaInboundApi()
- = swagger_client.null() #  | A shipment identifier originally returned by the createInboundShipmentPlan operation.
+api_instance = amazon_selling_partner_api.FbaInboundApi()
+ = amazon_selling_partner_api.null() #  | A shipment identifier originally returned by the createInboundShipmentPlan operation.
 
 try:
     api_instance.get_bill_of_lading()
@@ -310,15 +310,15 @@ Returns information that lets a seller know if Amazon recommends sending an item
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.FbaInboundApi()
- = swagger_client.null() #  | A marketplace identifier. Specifies the marketplace where the product would be stored.
- = swagger_client.null() #  | A list of SellerSKU values. Used to identify items for which you want inbound guidance for shipment to Amazon's fulfillment network. Note: SellerSKU is qualified by the SellerId, which is included with every Selling Partner API operation that you submit. If you specify a SellerSKU that identifies a variation parent ASIN, this operation returns an error. A variation parent ASIN represents a generic product that cannot be sold. Variation child ASINs represent products that have specific characteristics (such as size and color) and can be sold.  (optional)
- = swagger_client.null() #  | A list of ASIN values. Used to identify items for which you want inbound guidance for shipment to Amazon's fulfillment network. Note: If you specify a ASIN that identifies a variation parent ASIN, this operation returns an error. A variation parent ASIN represents a generic product that cannot be sold. Variation child ASINs represent products that have specific characteristics (such as size and color) and can be sold. (optional)
+api_instance = amazon_selling_partner_api.FbaInboundApi()
+ = amazon_selling_partner_api.null() #  | A marketplace identifier. Specifies the marketplace where the product would be stored.
+ = amazon_selling_partner_api.null() #  | A list of SellerSKU values. Used to identify items for which you want inbound guidance for shipment to Amazon's fulfillment network. Note: SellerSKU is qualified by the SellerId, which is included with every Selling Partner API operation that you submit. If you specify a SellerSKU that identifies a variation parent ASIN, this operation returns an error. A variation parent ASIN represents a generic product that cannot be sold. Variation child ASINs represent products that have specific characteristics (such as size and color) and can be sold.  (optional)
+ = amazon_selling_partner_api.null() #  | A list of ASIN values. Used to identify items for which you want inbound guidance for shipment to Amazon's fulfillment network. Note: If you specify a ASIN that identifies a variation parent ASIN, this operation returns an error. A variation parent ASIN represents a generic product that cannot be sold. Variation child ASINs represent products that have specific characteristics (such as size and color) and can be sold. (optional)
 
 try:
     api_instance.get_inbound_guidance(, =, =)
@@ -360,15 +360,15 @@ This operation gets an eligibility preview for an item that you specify. You can
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.FbaInboundApi()
- = swagger_client.null() #  | The ASIN of the item for which you want an eligibility preview.
- = swagger_client.null() #  | The program that you want to check eligibility against.
- = swagger_client.null() #  | The identifier for the marketplace in which you want to determine eligibility. Required only when program=INBOUND. (optional)
+api_instance = amazon_selling_partner_api.FbaInboundApi()
+ = amazon_selling_partner_api.null() #  | The ASIN of the item for which you want an eligibility preview.
+ = amazon_selling_partner_api.null() #  | The program that you want to check eligibility against.
+ = amazon_selling_partner_api.null() #  | The identifier for the marketplace in which you want to determine eligibility. Required only when program=INBOUND. (optional)
 
 try:
     api_instance.get_item_eligibility_preview(, , =)
@@ -410,18 +410,18 @@ Returns package/pallet labels for faster and more accurate shipment processing a
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.FbaInboundApi()
- = swagger_client.null() #  | A shipment identifier originally returned by the createInboundShipmentPlan operation.
- = swagger_client.null() #  | The page type to use to print the labels. Submitting a PageType value that is not supported in your marketplace returns an error.
- = swagger_client.null() #  | The type of labels requested. 
- = swagger_client.null() #  | The number of packages in the shipment. (optional)
- = swagger_client.null() #  | A list of identifiers that specify packages for which you want package labels printed.  Must match CartonId values previously passed using the FBA Inbound Shipment Carton Information Feed. If not, the operation returns the IncorrectPackageIdentifier error code. (optional)
- = swagger_client.null() #  | The number of pallets in the shipment. This returns four identical labels for each pallet. (optional)
+api_instance = amazon_selling_partner_api.FbaInboundApi()
+ = amazon_selling_partner_api.null() #  | A shipment identifier originally returned by the createInboundShipmentPlan operation.
+ = amazon_selling_partner_api.null() #  | The page type to use to print the labels. Submitting a PageType value that is not supported in your marketplace returns an error.
+ = amazon_selling_partner_api.null() #  | The type of labels requested. 
+ = amazon_selling_partner_api.null() #  | The number of packages in the shipment. (optional)
+ = amazon_selling_partner_api.null() #  | A list of identifiers that specify packages for which you want package labels printed.  Must match CartonId values previously passed using the FBA Inbound Shipment Carton Information Feed. If not, the operation returns the IncorrectPackageIdentifier error code. (optional)
+ = amazon_selling_partner_api.null() #  | The number of pallets in the shipment. This returns four identical labels for each pallet. (optional)
 
 try:
     api_instance.get_labels(, , , =, =, =)
@@ -466,14 +466,14 @@ Returns pre-order information, including dates, that a seller needs before confi
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.FbaInboundApi()
- = swagger_client.null() #  | A shipment identifier originally returned by the createInboundShipmentPlan operation.
- = swagger_client.null() #  | A marketplace identifier. Specifies the marketplace the shipment is tied to.
+api_instance = amazon_selling_partner_api.FbaInboundApi()
+ = amazon_selling_partner_api.null() #  | A shipment identifier originally returned by the createInboundShipmentPlan operation.
+ = amazon_selling_partner_api.null() #  | A marketplace identifier. Specifies the marketplace the shipment is tied to.
 
 try:
     api_instance.get_preorder_info(, )
@@ -514,15 +514,15 @@ Returns labeling requirements and item preparation instructions to help prepare 
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.FbaInboundApi()
- = swagger_client.null() #  | The country code of the country to which the items will be shipped. Note that labeling requirements and item preparation instructions can vary by country.
- = swagger_client.null() #  | A list of SellerSKU values. Used to identify items for which you want labeling requirements and item preparation instructions for shipment to Amazon's fulfillment network. The SellerSKU is qualified by the Seller ID, which is included with every call to the Seller Partner API.  Note: Include seller SKUs that you have used to list items on Amazon's retail website. If you include a seller SKU that you have never used to list an item on Amazon's retail website, the seller SKU is returned in the InvalidSKUList property in the response. (optional)
- = swagger_client.null() #  | A list of ASIN values. Used to identify items for which you want item preparation instructions to help with item sourcing decisions.  Note: ASINs must be included in the product catalog for at least one of the marketplaces that the seller  participates in. Any ASIN that is not included in the product catalog for at least one of the marketplaces that the seller participates in is returned in the InvalidASINList property in the response. You can find out which marketplaces a seller participates in by calling the getMarketplaceParticipations operation in the Selling Partner API for Sellers. (optional)
+api_instance = amazon_selling_partner_api.FbaInboundApi()
+ = amazon_selling_partner_api.null() #  | The country code of the country to which the items will be shipped. Note that labeling requirements and item preparation instructions can vary by country.
+ = amazon_selling_partner_api.null() #  | A list of SellerSKU values. Used to identify items for which you want labeling requirements and item preparation instructions for shipment to Amazon's fulfillment network. The SellerSKU is qualified by the Seller ID, which is included with every call to the Seller Partner API.  Note: Include seller SKUs that you have used to list items on Amazon's retail website. If you include a seller SKU that you have never used to list an item on Amazon's retail website, the seller SKU is returned in the InvalidSKUList property in the response. (optional)
+ = amazon_selling_partner_api.null() #  | A list of ASIN values. Used to identify items for which you want item preparation instructions to help with item sourcing decisions.  Note: ASINs must be included in the product catalog for at least one of the marketplaces that the seller  participates in. Any ASIN that is not included in the product catalog for at least one of the marketplaces that the seller participates in is returned in the InvalidASINList property in the response. You can find out which marketplaces a seller participates in by calling the getMarketplaceParticipations operation in the Selling Partner API for Sellers. (optional)
 
 try:
     api_instance.get_prep_instructions(, =, =)
@@ -564,17 +564,17 @@ Returns a list of items in a specified inbound shipment, or a list of items that
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.FbaInboundApi()
- = swagger_client.null() #  | Indicates whether items are returned using a date range (by providing the LastUpdatedAfter and LastUpdatedBefore parameters), or using NextToken, which continues returning items specified in a previous request.
- = swagger_client.null() #  | A marketplace identifier. Specifies the marketplace where the product would be stored.
- = swagger_client.null() #  | A date used for selecting inbound shipment items that were last updated after (or at) a specified time. The selection includes updates made by Amazon and by the seller. (optional)
- = swagger_client.null() #  | A date used for selecting inbound shipment items that were last updated before (or at) a specified time. The selection includes updates made by Amazon and by the seller. (optional)
- = swagger_client.null() #  | A string token returned in the response to your previous request. (optional)
+api_instance = amazon_selling_partner_api.FbaInboundApi()
+ = amazon_selling_partner_api.null() #  | Indicates whether items are returned using a date range (by providing the LastUpdatedAfter and LastUpdatedBefore parameters), or using NextToken, which continues returning items specified in a previous request.
+ = amazon_selling_partner_api.null() #  | A marketplace identifier. Specifies the marketplace where the product would be stored.
+ = amazon_selling_partner_api.null() #  | A date used for selecting inbound shipment items that were last updated after (or at) a specified time. The selection includes updates made by Amazon and by the seller. (optional)
+ = amazon_selling_partner_api.null() #  | A date used for selecting inbound shipment items that were last updated before (or at) a specified time. The selection includes updates made by Amazon and by the seller. (optional)
+ = amazon_selling_partner_api.null() #  | A string token returned in the response to your previous request. (optional)
 
 try:
     api_instance.get_shipment_items(, , =, =, =)
@@ -618,14 +618,14 @@ Returns a list of items in a specified inbound shipment.  **Usage Plan:**  | Rat
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.FbaInboundApi()
- = swagger_client.null() #  | A shipment identifier used for selecting items in a specific inbound shipment.
- = swagger_client.null() #  | A marketplace identifier. Specifies the marketplace where the product would be stored.
+api_instance = amazon_selling_partner_api.FbaInboundApi()
+ = amazon_selling_partner_api.null() #  | A shipment identifier used for selecting items in a specific inbound shipment.
+ = amazon_selling_partner_api.null() #  | A marketplace identifier. Specifies the marketplace where the product would be stored.
 
 try:
     api_instance.get_shipment_items_by_shipment_id(, )
@@ -666,19 +666,19 @@ Returns a list of inbound shipments based on criteria that you specify.  **Usage
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.FbaInboundApi()
- = swagger_client.null() #  | Indicates whether shipments are returned using shipment information (by providing the ShipmentStatusList or ShipmentIdList parameters), using a date range (by providing the LastUpdatedAfter and LastUpdatedBefore parameters), or by using NextToken to continue returning items specified in a previous request.
- = swagger_client.null() #  | A marketplace identifier. Specifies the marketplace where the product would be stored.
- = swagger_client.null() #  | A list of ShipmentStatus values. Used to select shipments with a current status that matches the status values that you specify. (optional)
- = swagger_client.null() #  | A list of shipment IDs used to select the shipments that you want. If both ShipmentStatusList and ShipmentIdList are specified, only shipments that match both parameters are returned. (optional)
- = swagger_client.null() #  | A date used for selecting inbound shipments that were last updated after (or at) a specified time. The selection includes updates made by Amazon and by the seller. (optional)
- = swagger_client.null() #  | A date used for selecting inbound shipments that were last updated before (or at) a specified time. The selection includes updates made by Amazon and by the seller. (optional)
- = swagger_client.null() #  | A string token returned in the response to your previous request. (optional)
+api_instance = amazon_selling_partner_api.FbaInboundApi()
+ = amazon_selling_partner_api.null() #  | Indicates whether shipments are returned using shipment information (by providing the ShipmentStatusList or ShipmentIdList parameters), using a date range (by providing the LastUpdatedAfter and LastUpdatedBefore parameters), or by using NextToken to continue returning items specified in a previous request.
+ = amazon_selling_partner_api.null() #  | A marketplace identifier. Specifies the marketplace where the product would be stored.
+ = amazon_selling_partner_api.null() #  | A list of ShipmentStatus values. Used to select shipments with a current status that matches the status values that you specify. (optional)
+ = amazon_selling_partner_api.null() #  | A list of shipment IDs used to select the shipments that you want. If both ShipmentStatusList and ShipmentIdList are specified, only shipments that match both parameters are returned. (optional)
+ = amazon_selling_partner_api.null() #  | A date used for selecting inbound shipments that were last updated after (or at) a specified time. The selection includes updates made by Amazon and by the seller. (optional)
+ = amazon_selling_partner_api.null() #  | A date used for selecting inbound shipments that were last updated before (or at) a specified time. The selection includes updates made by Amazon and by the seller. (optional)
+ = amazon_selling_partner_api.null() #  | A string token returned in the response to your previous request. (optional)
 
 try:
     api_instance.get_shipments(, , =, =, =, =, =)
@@ -724,13 +724,13 @@ Returns current transportation information about an inbound shipment.  **Usage P
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.FbaInboundApi()
- = swagger_client.null() #  | A shipment identifier originally returned by the createInboundShipmentPlan operation.
+api_instance = amazon_selling_partner_api.FbaInboundApi()
+ = amazon_selling_partner_api.null() #  | A shipment identifier originally returned by the createInboundShipmentPlan operation.
 
 try:
     api_instance.get_transport_details()
@@ -770,13 +770,13 @@ Sends transportation information to Amazon about an inbound shipment.  **Usage P
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.FbaInboundApi()
- = swagger_client.null() #  | A shipment identifier originally returned by the createInboundShipmentPlan operation.
+api_instance = amazon_selling_partner_api.FbaInboundApi()
+ = amazon_selling_partner_api.null() #  | A shipment identifier originally returned by the createInboundShipmentPlan operation.
 
 try:
     api_instance.put_transport_details()
@@ -816,13 +816,13 @@ Adds, updates, or removes items from the inbound shipment identified by the spec
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.FbaInboundApi()
- = swagger_client.null() #  | A shipment identifier originally returned by the createInboundShipmentPlan operation.
+api_instance = amazon_selling_partner_api.FbaInboundApi()
+ = amazon_selling_partner_api.null() #  | A shipment identifier originally returned by the createInboundShipmentPlan operation.
 
 try:
     api_instance.update_inbound_shipment()
@@ -862,13 +862,13 @@ Cancels a previously-confirmed request to ship an inbound shipment using an Amaz
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.FbaInboundApi()
- = swagger_client.null() #  | A shipment identifier originally returned by the createInboundShipmentPlan operation.
+api_instance = amazon_selling_partner_api.FbaInboundApi()
+ = amazon_selling_partner_api.null() #  | A shipment identifier originally returned by the createInboundShipmentPlan operation.
 
 try:
     api_instance.void_transport()

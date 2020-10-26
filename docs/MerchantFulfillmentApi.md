@@ -1,4 +1,4 @@
-# swagger_client.MerchantFulfillmentApi
+# amazon_selling_partner_api.MerchantFulfillmentApi
 
 All URIs are relative to */*
 
@@ -24,13 +24,13 @@ Cancel the shipment indicated by the specified shipment identifier.  **Usage Pla
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.MerchantFulfillmentApi()
- = swagger_client.null() #  | The Amazon-defined shipment identifier for the shipment to cancel.
+api_instance = amazon_selling_partner_api.MerchantFulfillmentApi()
+ = amazon_selling_partner_api.null() #  | The Amazon-defined shipment identifier for the shipment to cancel.
 
 try:
     api_instance.cancel_shipment()
@@ -70,13 +70,13 @@ Cancel the shipment indicated by the specified shipment identifer.  **Usage Plan
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.MerchantFulfillmentApi()
- = swagger_client.null() #  | The Amazon-defined shipment identifier for the shipment to cancel.
+api_instance = amazon_selling_partner_api.MerchantFulfillmentApi()
+ = amazon_selling_partner_api.null() #  | The Amazon-defined shipment identifier for the shipment to cancel.
 
 try:
     api_instance.cancel_shipment_old()
@@ -116,12 +116,12 @@ Create a shipment with the information provided.  **Usage Plan:**  | Rate (reque
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.MerchantFulfillmentApi()
+api_instance = amazon_selling_partner_api.MerchantFulfillmentApi()
 
 try:
     api_instance.create_shipment()
@@ -158,12 +158,12 @@ Gets a list of additional seller inputs required for a ship method. This is gene
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.MerchantFulfillmentApi()
+api_instance = amazon_selling_partner_api.MerchantFulfillmentApi()
 
 try:
     api_instance.get_additional_seller_inputs()
@@ -200,12 +200,12 @@ Get a list of additional seller inputs required for a ship method. This is gener
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.MerchantFulfillmentApi()
+api_instance = amazon_selling_partner_api.MerchantFulfillmentApi()
 
 try:
     api_instance.get_additional_seller_inputs_old()
@@ -242,12 +242,12 @@ Returns a list of shipping service offers that satisfy the specified shipment re
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.MerchantFulfillmentApi()
+api_instance = amazon_selling_partner_api.MerchantFulfillmentApi()
 
 try:
     api_instance.get_eligible_shipment_services()
@@ -284,12 +284,12 @@ Returns a list of shipping service offers that satisfy the specified shipment re
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.MerchantFulfillmentApi()
+api_instance = amazon_selling_partner_api.MerchantFulfillmentApi()
 
 try:
     api_instance.get_eligible_shipment_services_old()
@@ -326,13 +326,13 @@ Returns the shipment information for an existing shipment.  **Usage Plan:**  | R
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.MerchantFulfillmentApi()
- = swagger_client.null() #  | The Amazon-defined shipment identifier for the shipment.
+api_instance = amazon_selling_partner_api.MerchantFulfillmentApi()
+ = amazon_selling_partner_api.null() #  | The Amazon-defined shipment identifier for the shipment.
 
 try:
     api_instance.get_shipment()

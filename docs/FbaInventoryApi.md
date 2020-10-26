@@ -1,4 +1,4 @@
-# swagger_client.FbaInventoryApi
+# amazon_selling_partner_api.FbaInventoryApi
 
 All URIs are relative to */*
 
@@ -17,19 +17,19 @@ Returns a list of inventory summaries. The summaries returned depend on the pres
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.FbaInventoryApi()
- = swagger_client.null() #  | The granularity type for the inventory aggregation level.
- = swagger_client.null() #  | The granularity ID for the inventory aggregation level.
- = swagger_client.null() #  | The marketplace ID for the marketplace for which to return inventory summaries.
- = swagger_client.null() #  | true to return inventory summaries with additional summarized inventory details and quantities. Otherwise, returns inventory summaries only (default value). (optional)
- = swagger_client.null() #  | A start date and time in ISO8601 format. If specified, all inventory summaries that have changed since then are returned. You must specify a date and time that is no earlier than 18 months prior to the date and time when you call the API. Note: Changes in inboundWorkingQuantity, inboundShippedQuantity and inboundReceivingQuantity are not detected. (optional)
- = swagger_client.null() #  | A list of seller SKUs for which to return inventory summaries. You may specify up to 50 SKUs. (optional)
- = swagger_client.null() #  | String token returned in the response of your previous request. (optional)
+api_instance = amazon_selling_partner_api.FbaInventoryApi()
+ = amazon_selling_partner_api.null() #  | The granularity type for the inventory aggregation level.
+ = amazon_selling_partner_api.null() #  | The granularity ID for the inventory aggregation level.
+ = amazon_selling_partner_api.null() #  | The marketplace ID for the marketplace for which to return inventory summaries.
+ = amazon_selling_partner_api.null() #  | true to return inventory summaries with additional summarized inventory details and quantities. Otherwise, returns inventory summaries only (default value). (optional)
+ = amazon_selling_partner_api.null() #  | A start date and time in ISO8601 format. If specified, all inventory summaries that have changed since then are returned. You must specify a date and time that is no earlier than 18 months prior to the date and time when you call the API. Note: Changes in inboundWorkingQuantity, inboundShippedQuantity and inboundReceivingQuantity are not detected. (optional)
+ = amazon_selling_partner_api.null() #  | A list of seller SKUs for which to return inventory summaries. You may specify up to 50 SKUs. (optional)
+ = amazon_selling_partner_api.null() #  | String token returned in the response of your previous request. (optional)
 
 try:
     api_instance.get_inventory_summaries(, , , =, =, =, =)

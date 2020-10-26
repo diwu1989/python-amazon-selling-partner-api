@@ -1,4 +1,4 @@
-# swagger_client.ReportsApi
+# amazon_selling_partner_api.ReportsApi
 
 All URIs are relative to */*
 
@@ -25,13 +25,13 @@ Cancels the report that you specify. Only reports with processingStatus=IN_QUEUE
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ReportsApi()
- = swagger_client.null() #  | The identifier for the report. This identifier is unique only in combination with a seller ID.
+api_instance = amazon_selling_partner_api.ReportsApi()
+ = amazon_selling_partner_api.null() #  | The identifier for the report. This identifier is unique only in combination with a seller ID.
 
 try:
     api_instance.cancel_report()
@@ -71,13 +71,13 @@ Cancels the report schedule that you specify.  **Usage Plan:**  | Rate (requests
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ReportsApi()
- = swagger_client.null() #  | The identifier for the report schedule. This identifier is unique only in combination with a seller ID.
+api_instance = amazon_selling_partner_api.ReportsApi()
+ = amazon_selling_partner_api.null() #  | The identifier for the report schedule. This identifier is unique only in combination with a seller ID.
 
 try:
     api_instance.cancel_report_schedule()
@@ -117,12 +117,12 @@ Creates a report.  **Usage Plan:**  | Rate (requests per second) | Burst | | ---
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ReportsApi()
+api_instance = amazon_selling_partner_api.ReportsApi()
 
 try:
     api_instance.create_report()
@@ -159,12 +159,12 @@ Creates a report schedule. If a report schedule with the same report type and ma
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ReportsApi()
+api_instance = amazon_selling_partner_api.ReportsApi()
 
 try:
     api_instance.create_report_schedule()
@@ -201,13 +201,13 @@ Returns report details (including the reportDocumentId, if available) for the re
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ReportsApi()
- = swagger_client.null() #  | The identifier for the report. This identifier is unique only in combination with a seller ID.
+api_instance = amazon_selling_partner_api.ReportsApi()
+ = amazon_selling_partner_api.null() #  | The identifier for the report. This identifier is unique only in combination with a seller ID.
 
 try:
     api_instance.get_report()
@@ -247,13 +247,13 @@ Returns the information required for retrieving a report document's contents. Th
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ReportsApi()
- = swagger_client.null() #  | The identifier for the report document.
+api_instance = amazon_selling_partner_api.ReportsApi()
+ = amazon_selling_partner_api.null() #  | The identifier for the report document.
 
 try:
     api_instance.get_report_document()
@@ -293,13 +293,13 @@ Returns report schedule details for the report schedule that you specify.  **Usa
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ReportsApi()
- = swagger_client.null() #  | The identifier for the report schedule. This identifier is unique only in combination with a seller ID.
+api_instance = amazon_selling_partner_api.ReportsApi()
+ = amazon_selling_partner_api.null() #  | The identifier for the report schedule. This identifier is unique only in combination with a seller ID.
 
 try:
     api_instance.get_report_schedule()
@@ -339,13 +339,13 @@ Returns report schedule details that match the filters that you specify.  **Usag
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ReportsApi()
- = swagger_client.null() #  | A list of report types used to filter report schedules.
+api_instance = amazon_selling_partner_api.ReportsApi()
+ = amazon_selling_partner_api.null() #  | A list of report types used to filter report schedules.
 
 try:
     api_instance.get_report_schedules()
@@ -385,19 +385,19 @@ Returns report details for the reports that match the filters that you specify. 
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ReportsApi()
- = swagger_client.null() #  | A list of report types used to filter reports. When reportTypes is provided, the other filter parameters (processingStatuses, marketplaceIds, createdSince, createdUntil) and pageSize may also be provided. Either reportTypes or nextToken is required. (optional)
- = swagger_client.null() #  | A list of processing statuses used to filter reports. (optional)
- = swagger_client.null() #  | A list of marketplace identifiers used to filter reports. The reports returned will match at least one of the marketplaces that you specify. (optional)
- = swagger_client.null() #  | The maximum number of reports to return in a single call. (optional)
- = swagger_client.null() #  | The earliest report creation date and time for reports to include in the response, in ISO 8601 date time format. The default is 90 days ago. Reports are retained for a maximum of 90 days. (optional)
- = swagger_client.null() #  | The latest report creation date and time for reports to include in the response, in ISO 8601 date time format. The default is now. (optional)
- = swagger_client.null() #  | A string token returned in the response to your previous request. nextToken is returned when the number of results exceeds the specified pageSize value. To get the next page of results, call the getReports operation and include this token as the only parameter. Specifying nextToken with any other parameters will cause the request to fail. (optional)
+api_instance = amazon_selling_partner_api.ReportsApi()
+ = amazon_selling_partner_api.null() #  | A list of report types used to filter reports. When reportTypes is provided, the other filter parameters (processingStatuses, marketplaceIds, createdSince, createdUntil) and pageSize may also be provided. Either reportTypes or nextToken is required. (optional)
+ = amazon_selling_partner_api.null() #  | A list of processing statuses used to filter reports. (optional)
+ = amazon_selling_partner_api.null() #  | A list of marketplace identifiers used to filter reports. The reports returned will match at least one of the marketplaces that you specify. (optional)
+ = amazon_selling_partner_api.null() #  | The maximum number of reports to return in a single call. (optional)
+ = amazon_selling_partner_api.null() #  | The earliest report creation date and time for reports to include in the response, in ISO 8601 date time format. The default is 90 days ago. Reports are retained for a maximum of 90 days. (optional)
+ = amazon_selling_partner_api.null() #  | The latest report creation date and time for reports to include in the response, in ISO 8601 date time format. The default is now. (optional)
+ = amazon_selling_partner_api.null() #  | A string token returned in the response to your previous request. nextToken is returned when the number of results exceeds the specified pageSize value. To get the next page of results, call the getReports operation and include this token as the only parameter. Specifying nextToken with any other parameters will cause the request to fail. (optional)
 
 try:
     api_instance.get_reports(=, =, =, =, =, =, =)

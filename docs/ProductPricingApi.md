@@ -1,4 +1,4 @@
-# swagger_client.ProductPricingApi
+# amazon_selling_partner_api.ProductPricingApi
 
 All URIs are relative to */*
 
@@ -20,16 +20,16 @@ Returns competitive pricing information for a seller's offer listings based on s
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ProductPricingApi()
- = swagger_client.null() #  | A marketplace identifier. Specifies the marketplace for which prices are returned.
- = swagger_client.null() #  | Indicates whether ASIN values or seller SKU values are used to identify items. If you specify Asin, the information in the response will be dependent on the list of Asins you provide in the Asins parameter. If you specify Sku, the information in the response will be dependent on the list of Skus you provide in the Skus parameter. Possible values: Asin, Sku.
- = swagger_client.null() #  | A list of up to twenty Amazon Standard Identification Number (ASIN) values used to identify items in the given marketplace. (optional)
- = swagger_client.null() #  | A list of up to twenty seller SKU values used to identify items in the given marketplace. (optional)
+api_instance = amazon_selling_partner_api.ProductPricingApi()
+ = amazon_selling_partner_api.null() #  | A marketplace identifier. Specifies the marketplace for which prices are returned.
+ = amazon_selling_partner_api.null() #  | Indicates whether ASIN values or seller SKU values are used to identify items. If you specify Asin, the information in the response will be dependent on the list of Asins you provide in the Asins parameter. If you specify Sku, the information in the response will be dependent on the list of Skus you provide in the Skus parameter. Possible values: Asin, Sku.
+ = amazon_selling_partner_api.null() #  | A list of up to twenty Amazon Standard Identification Number (ASIN) values used to identify items in the given marketplace. (optional)
+ = amazon_selling_partner_api.null() #  | A list of up to twenty seller SKU values used to identify items in the given marketplace. (optional)
 
 try:
     api_instance.get_competitive_pricing(, , =, =)
@@ -72,15 +72,15 @@ Returns the lowest priced offers for a single item based on ASIN.  **Usage Plan:
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ProductPricingApi()
- = swagger_client.null() #  | A marketplace identifier. Specifies the marketplace for which prices are returned.
- = swagger_client.null() #  | Filters the offer listings to be considered based on item condition. Possible values: New, Used, Collectible, Refurbished, Club.
- = swagger_client.null() #  | The Amazon Standard Identification Number (ASIN) of the item.
+api_instance = amazon_selling_partner_api.ProductPricingApi()
+ = amazon_selling_partner_api.null() #  | A marketplace identifier. Specifies the marketplace for which prices are returned.
+ = amazon_selling_partner_api.null() #  | Filters the offer listings to be considered based on item condition. Possible values: New, Used, Collectible, Refurbished, Club.
+ = amazon_selling_partner_api.null() #  | The Amazon Standard Identification Number (ASIN) of the item.
 
 try:
     api_instance.get_item_offers(, , )
@@ -122,15 +122,15 @@ Returns the lowest priced offers for a single SKU listing.  **Usage Plan:**  | R
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ProductPricingApi()
- = swagger_client.null() #  | A marketplace identifier. Specifies the marketplace for which prices are returned.
- = swagger_client.null() #  | Filters the offer listings based on item condition. Possible values: New, Used, Collectible, Refurbished, Club.
- = swagger_client.null() #  | Identifies an item in the given marketplace. SellerSKU is qualified by the seller's SellerId, which is included with every operation that you submit.
+api_instance = amazon_selling_partner_api.ProductPricingApi()
+ = amazon_selling_partner_api.null() #  | A marketplace identifier. Specifies the marketplace for which prices are returned.
+ = amazon_selling_partner_api.null() #  | Filters the offer listings based on item condition. Possible values: New, Used, Collectible, Refurbished, Club.
+ = amazon_selling_partner_api.null() #  | Identifies an item in the given marketplace. SellerSKU is qualified by the seller's SellerId, which is included with every operation that you submit.
 
 try:
     api_instance.get_listing_offers(, , )
@@ -172,17 +172,17 @@ Returns pricing information for a seller's offer listings based on seller SKU or
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ProductPricingApi()
- = swagger_client.null() #  | A marketplace identifier. Specifies the marketplace for which prices are returned.
- = swagger_client.null() #  | Indicates whether ASIN values or seller SKU values are used to identify items. If you specify Asin, the information in the response will be dependent on the list of Asins you provide in the Asins parameter. If you specify Sku, the information in the response will be dependent on the list of Skus you provide in the Skus parameter.
- = swagger_client.null() #  | A list of up to twenty Amazon Standard Identification Number (ASIN) values used to identify items in the given marketplace. (optional)
- = swagger_client.null() #  | A list of up to twenty seller SKU values used to identify items in the given marketplace. (optional)
- = swagger_client.null() #  | Filters the offer listings based on item condition. Possible values: New, Used, Collectible, Refurbished, Club. (optional)
+api_instance = amazon_selling_partner_api.ProductPricingApi()
+ = amazon_selling_partner_api.null() #  | A marketplace identifier. Specifies the marketplace for which prices are returned.
+ = amazon_selling_partner_api.null() #  | Indicates whether ASIN values or seller SKU values are used to identify items. If you specify Asin, the information in the response will be dependent on the list of Asins you provide in the Asins parameter. If you specify Sku, the information in the response will be dependent on the list of Skus you provide in the Skus parameter.
+ = amazon_selling_partner_api.null() #  | A list of up to twenty Amazon Standard Identification Number (ASIN) values used to identify items in the given marketplace. (optional)
+ = amazon_selling_partner_api.null() #  | A list of up to twenty seller SKU values used to identify items in the given marketplace. (optional)
+ = amazon_selling_partner_api.null() #  | Filters the offer listings based on item condition. Possible values: New, Used, Collectible, Refurbished, Club. (optional)
 
 try:
     api_instance.get_pricing(, , =, =, =)

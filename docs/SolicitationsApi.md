@@ -1,4 +1,4 @@
-# swagger_client.SolicitationsApi
+# amazon_selling_partner_api.SolicitationsApi
 
 All URIs are relative to */*
 
@@ -18,14 +18,14 @@ Sends a solicitation to a buyer asking for seller feedback and a product review 
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SolicitationsApi()
- = swagger_client.null() #  | An Amazon order identifier. This specifies the order for which a solicitation is sent.
- = swagger_client.null() #  | A marketplace identifier. This specifies the marketplace in which the order was placed. Only one marketplace can be specified.
+api_instance = amazon_selling_partner_api.SolicitationsApi()
+ = amazon_selling_partner_api.null() #  | An Amazon order identifier. This specifies the order for which a solicitation is sent.
+ = amazon_selling_partner_api.null() #  | A marketplace identifier. This specifies the marketplace in which the order was placed. Only one marketplace can be specified.
 
 try:
     api_instance.create_product_review_and_seller_feedback_solicitation(, )
@@ -66,14 +66,14 @@ Returns a list of solicitation types that are available for an order that you sp
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SolicitationsApi()
- = swagger_client.null() #  | An Amazon order identifier. This specifies the order for which you want a list of available solicitation types.
- = swagger_client.null() #  | A marketplace identifier. This specifies the marketplace in which the order was placed. Only one marketplace can be specified.
+api_instance = amazon_selling_partner_api.SolicitationsApi()
+ = amazon_selling_partner_api.null() #  | An Amazon order identifier. This specifies the order for which you want a list of available solicitation types.
+ = amazon_selling_partner_api.null() #  | A marketplace identifier. This specifies the marketplace in which the order was placed. Only one marketplace can be specified.
 
 try:
     api_instance.get_solicitation_actions_for_order(, )

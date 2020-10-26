@@ -14,16 +14,16 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from api.service_api import ServiceApi  # noqa: E501
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.api.service_api import ServiceApi  # noqa: E501
+from amazon_selling_partner_api.rest import ApiException
 
 
 class TestServiceApi(unittest.TestCase):
     """ServiceApi unit test stubs"""
 
     def setUp(self):
-        self.api = api.service_api.ServiceApi()  # noqa: E501
+        self.api = ServiceApi()  # noqa: E501
 
     def tearDown(self):
         pass

@@ -1,4 +1,4 @@
-# swagger_client.ServiceApi
+# amazon_selling_partner_api.ServiceApi
 
 All URIs are relative to */*
 
@@ -22,13 +22,13 @@ Adds an appointment to the service job indicated by the service job identifier y
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ServiceApi()
- = swagger_client.null() #  | An Amazon defined service job identifier.
+api_instance = amazon_selling_partner_api.ServiceApi()
+ = amazon_selling_partner_api.null() #  | An Amazon defined service job identifier.
 
 try:
     api_instance.add_appointment_for_service_job_by_service_job_id()
@@ -68,14 +68,14 @@ Cancels the service job indicated by the service job identifier you specify.  **
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ServiceApi()
- = swagger_client.null() #  | An Amazon defined service job identifier.
- = swagger_client.null() #  | A cancel reason code that specifies the reason for cancelling a service job.
+api_instance = amazon_selling_partner_api.ServiceApi()
+ = amazon_selling_partner_api.null() #  | An Amazon defined service job identifier.
+ = amazon_selling_partner_api.null() #  | A cancel reason code that specifies the reason for cancelling a service job.
 
 try:
     api_instance.cancel_service_job_by_service_job_id(, )
@@ -116,13 +116,13 @@ Completes the service job indicated by the service job identifier you specify.  
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ServiceApi()
- = swagger_client.null() #  | An Amazon defined service job identifier.
+api_instance = amazon_selling_partner_api.ServiceApi()
+ = amazon_selling_partner_api.null() #  | An Amazon defined service job identifier.
 
 try:
     api_instance.complete_service_job_by_service_job_id()
@@ -162,13 +162,13 @@ Gets service job details for the service job indicated by the service job identi
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ServiceApi()
- = swagger_client.null() #  | A service job identifier.
+api_instance = amazon_selling_partner_api.ServiceApi()
+ = amazon_selling_partner_api.null() #  | A service job identifier.
 
 try:
     api_instance.get_service_job_by_service_job_id()
@@ -208,25 +208,25 @@ Gets service job details for the specified filter query.  **Usage Plan:**  | Rat
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ServiceApi()
- = swagger_client.null() #  | Used to select jobs that were placed in the specified marketplaces. 
- = swagger_client.null() #  | List of service order ids for the query you want to perform.Max values supported 20.  (optional)
- = swagger_client.null() #  | A list of one or more job status by which to filter the list of jobs. (optional)
- = swagger_client.null() #  | String returned in the response of your previous request. (optional)
- = swagger_client.null() #  | A non-negative integer that indicates the maximum number of jobs to return in the list, Value must be 1 - 20. Default 20.  (optional)
- = swagger_client.null() #  | Sort fields on which you want to sort the output. (optional)
- = swagger_client.null() #  | Sort order for the query you want to perform. (optional)
- = swagger_client.null() #  | A date used for selecting jobs created after (or at) a specified time must be in ISO 8601 format. Required if LastUpdatedAfter is not specified.Specifying both CreatedAfter and LastUpdatedAfter returns an error.  (optional)
- = swagger_client.null() #  | A date used for selecting jobs created before (or at) a specified time must be in ISO 8601 format.  (optional)
- = swagger_client.null() #  | A date used for selecting jobs updated after (or at) a specified time must be in ISO 8601 format. Required if createdAfter is not specified.Specifying both CreatedAfter and LastUpdatedAfter returns an error.  (optional)
- = swagger_client.null() #  | A date used for selecting jobs updated before (or at) a specified time must be in ISO 8601 format.  (optional)
- = swagger_client.null() #  | A date used for filtering jobs schedule after (or at) a specified time must be in ISO 8601 format. schedule end date should not be earlier than schedule start date.  (optional)
- = swagger_client.null() #  | A date used for filtering jobs schedule before (or at) a specified time must be in ISO 8601 format. schedule end date should not be earlier than schedule start date.  (optional)
+api_instance = amazon_selling_partner_api.ServiceApi()
+ = amazon_selling_partner_api.null() #  | Used to select jobs that were placed in the specified marketplaces. 
+ = amazon_selling_partner_api.null() #  | List of service order ids for the query you want to perform.Max values supported 20.  (optional)
+ = amazon_selling_partner_api.null() #  | A list of one or more job status by which to filter the list of jobs. (optional)
+ = amazon_selling_partner_api.null() #  | String returned in the response of your previous request. (optional)
+ = amazon_selling_partner_api.null() #  | A non-negative integer that indicates the maximum number of jobs to return in the list, Value must be 1 - 20. Default 20.  (optional)
+ = amazon_selling_partner_api.null() #  | Sort fields on which you want to sort the output. (optional)
+ = amazon_selling_partner_api.null() #  | Sort order for the query you want to perform. (optional)
+ = amazon_selling_partner_api.null() #  | A date used for selecting jobs created after (or at) a specified time must be in ISO 8601 format. Required if LastUpdatedAfter is not specified.Specifying both CreatedAfter and LastUpdatedAfter returns an error.  (optional)
+ = amazon_selling_partner_api.null() #  | A date used for selecting jobs created before (or at) a specified time must be in ISO 8601 format.  (optional)
+ = amazon_selling_partner_api.null() #  | A date used for selecting jobs updated after (or at) a specified time must be in ISO 8601 format. Required if createdAfter is not specified.Specifying both CreatedAfter and LastUpdatedAfter returns an error.  (optional)
+ = amazon_selling_partner_api.null() #  | A date used for selecting jobs updated before (or at) a specified time must be in ISO 8601 format.  (optional)
+ = amazon_selling_partner_api.null() #  | A date used for filtering jobs schedule after (or at) a specified time must be in ISO 8601 format. schedule end date should not be earlier than schedule start date.  (optional)
+ = amazon_selling_partner_api.null() #  | A date used for filtering jobs schedule before (or at) a specified time must be in ISO 8601 format. schedule end date should not be earlier than schedule start date.  (optional)
 
 try:
     api_instance.get_service_jobs(, =, =, =, =, =, =, =, =, =, =, =, =)
@@ -278,14 +278,14 @@ Reschedules an appointment for the service job indicated by the service job iden
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ServiceApi()
- = swagger_client.null() #  | An Amazon defined service job identifier.
- = swagger_client.null() #  | An existing appointment identifier for the Service Job.
+api_instance = amazon_selling_partner_api.ServiceApi()
+ = amazon_selling_partner_api.null() #  | An Amazon defined service job identifier.
+ = amazon_selling_partner_api.null() #  | An existing appointment identifier for the Service Job.
 
 try:
     api_instance.reschedule_appointment_for_service_job_by_service_job_id(, )

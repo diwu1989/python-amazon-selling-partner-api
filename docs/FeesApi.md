@@ -1,4 +1,4 @@
-# swagger_client.FeesApi
+# amazon_selling_partner_api.FeesApi
 
 All URIs are relative to */*
 
@@ -18,13 +18,13 @@ Returns the estimated fees for the item indicated by the specified Asin in the m
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.FeesApi()
- = swagger_client.null() #  | The Amazon Standard Identification Number (ASIN) of the item.
+api_instance = amazon_selling_partner_api.FeesApi()
+ = amazon_selling_partner_api.null() #  | The Amazon Standard Identification Number (ASIN) of the item.
 
 try:
     api_instance.get_my_fees_estimate_for_asin()
@@ -64,13 +64,13 @@ Returns the estimated fees for the item indicated by the specified seller SKU in
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.FeesApi()
- = swagger_client.null() #  | Used to identify an item in the given marketplace. SellerSKU is qualified by the seller's SellerId, which is included with every operation that you submit.
+api_instance = amazon_selling_partner_api.FeesApi()
+ = amazon_selling_partner_api.null() #  | Used to identify an item in the given marketplace. SellerSKU is qualified by the seller's SellerId, which is included with every operation that you submit.
 
 try:
     api_instance.get_my_fees_estimate_for_sku()

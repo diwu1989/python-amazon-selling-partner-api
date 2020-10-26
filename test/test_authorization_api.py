@@ -14,16 +14,16 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from api.authorization_api import AuthorizationApi  # noqa: E501
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.api.authorization_api import AuthorizationApi  # noqa: E501
+from amazon_selling_partner_api.rest import ApiException
 
 
 class TestAuthorizationApi(unittest.TestCase):
     """AuthorizationApi unit test stubs"""
 
     def setUp(self):
-        self.api = api.authorization_api.AuthorizationApi()  # noqa: E501
+        self.api = AuthorizationApi()  # noqa: E501
 
     def tearDown(self):
         pass

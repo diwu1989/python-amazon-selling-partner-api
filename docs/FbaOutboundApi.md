@@ -1,4 +1,4 @@
-# swagger_client.FbaOutboundApi
+# amazon_selling_partner_api.FbaOutboundApi
 
 All URIs are relative to */*
 
@@ -25,13 +25,13 @@ Requests that Amazon stop attempting to fulfill the fulfillment order indicated 
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.FbaOutboundApi()
- = swagger_client.null() #  | The identifier assigned to the item by the seller when the fulfillment order was created.
+api_instance = amazon_selling_partner_api.FbaOutboundApi()
+ = amazon_selling_partner_api.null() #  | The identifier assigned to the item by the seller when the fulfillment order was created.
 
 try:
     api_instance.cancel_fulfillment_order()
@@ -71,12 +71,12 @@ Requests that Amazon ship items from the seller's inventory in Amazon's fulfillm
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.FbaOutboundApi()
+api_instance = amazon_selling_partner_api.FbaOutboundApi()
 
 try:
     api_instance.create_fulfillment_order()
@@ -113,13 +113,13 @@ Creates a fulfillment return.   **Usage Plan:**  | Rate (requests per second) | 
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.FbaOutboundApi()
- = swagger_client.null() #  | An identifier assigned by the seller to the fulfillment order at the time it was created. The seller uses their own records to find the correct SellerFulfillmentOrderId value based on the buyer's request to return items.
+api_instance = amazon_selling_partner_api.FbaOutboundApi()
+ = amazon_selling_partner_api.null() #  | An identifier assigned by the seller to the fulfillment order at the time it was created. The seller uses their own records to find the correct SellerFulfillmentOrderId value based on the buyer's request to return items.
 
 try:
     api_instance.create_fulfillment_return()
@@ -159,13 +159,13 @@ Returns the fulfillment order indicated by the specified order identifier.  **Us
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.FbaOutboundApi()
- = swagger_client.null() #  | The identifier assigned to the item by the seller when the fulfillment order was created.
+api_instance = amazon_selling_partner_api.FbaOutboundApi()
+ = amazon_selling_partner_api.null() #  | The identifier assigned to the item by the seller when the fulfillment order was created.
 
 try:
     api_instance.get_fulfillment_order()
@@ -205,12 +205,12 @@ Returns a list of fulfillment order previews based on shipping criteria that you
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.FbaOutboundApi()
+api_instance = amazon_selling_partner_api.FbaOutboundApi()
 
 try:
     api_instance.get_fulfillment_preview()
@@ -247,13 +247,13 @@ Returns delivery tracking information for a package in an outbound shipment for 
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.FbaOutboundApi()
- = swagger_client.null() #  | The unencrypted package identifier returned by the getFulfillmentOrder operation.
+api_instance = amazon_selling_partner_api.FbaOutboundApi()
+ = amazon_selling_partner_api.null() #  | The unencrypted package identifier returned by the getFulfillmentOrder operation.
 
 try:
     api_instance.get_package_tracking_details()
@@ -293,15 +293,15 @@ Returns a list of fulfillment orders fulfilled after (or at) a specified date-ti
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.FbaOutboundApi()
- = swagger_client.null() #  | A date and time used to select fulfillment orders that were last updated after (or at) a specified time. An update is defined as any change in fulfillment order status, including the creation of a new fulfillment order. (optional)
- = swagger_client.null() #  | Indicates the intended recipient channel for the order. (optional)
- = swagger_client.null() #  | A string token returned in the response to your previous request. (optional)
+api_instance = amazon_selling_partner_api.FbaOutboundApi()
+ = amazon_selling_partner_api.null() #  | A date and time used to select fulfillment orders that were last updated after (or at) a specified time. An update is defined as any change in fulfillment order status, including the creation of a new fulfillment order. (optional)
+ = amazon_selling_partner_api.null() #  | Indicates the intended recipient channel for the order. (optional)
+ = amazon_selling_partner_api.null() #  | A string token returned in the response to your previous request. (optional)
 
 try:
     api_instance.list_all_fulfillment_orders(=, =, =)
@@ -343,16 +343,16 @@ Returns a list of return reason codes for a seller SKU in a given marketplace.  
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.FbaOutboundApi()
- = swagger_client.null() #  | The seller SKU for which return reason codes are required.
- = swagger_client.null() #  | The language that the TranslatedDescription property of the ReasonCodeDetails response object should be translated into.
- = swagger_client.null() #  | The marketplace for which the seller wants return reason codes. (optional)
- = swagger_client.null() #  | The identifier assigned to the item by the seller when the fulfillment order was created. The service uses this value to determine the marketplace for which the seller wants return reason codes. (optional)
+api_instance = amazon_selling_partner_api.FbaOutboundApi()
+ = amazon_selling_partner_api.null() #  | The seller SKU for which return reason codes are required.
+ = amazon_selling_partner_api.null() #  | The language that the TranslatedDescription property of the ReasonCodeDetails response object should be translated into.
+ = amazon_selling_partner_api.null() #  | The marketplace for which the seller wants return reason codes. (optional)
+ = amazon_selling_partner_api.null() #  | The identifier assigned to the item by the seller when the fulfillment order was created. The service uses this value to determine the marketplace for which the seller wants return reason codes. (optional)
 
 try:
     api_instance.list_return_reason_codes(, , =, =)
@@ -395,13 +395,13 @@ Updates and/or requests shipment for a fulfillment order with an order hold on i
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.FbaOutboundApi()
- = swagger_client.null() #  | The identifier assigned to the item by the seller when the fulfillment order was created.
+api_instance = amazon_selling_partner_api.FbaOutboundApi()
+ = amazon_selling_partner_api.null() #  | The identifier assigned to the item by the seller when the fulfillment order was created.
 
 try:
     api_instance.update_fulfillment_order()

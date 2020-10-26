@@ -1,4 +1,4 @@
-# swagger_client.MessagingApi
+# amazon_selling_partner_api.MessagingApi
 
 All URIs are relative to */*
 
@@ -28,14 +28,14 @@ Sends a message asking a buyer to provide or verify customization details such a
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.MessagingApi()
- = swagger_client.null() #  | An Amazon order identifier. This specifies the order for which a message is sent.
- = swagger_client.null() #  | A marketplace identifier. This specifies the marketplace in which the order was placed. Only one marketplace can be specified.
+api_instance = amazon_selling_partner_api.MessagingApi()
+ = amazon_selling_partner_api.null() #  | An Amazon order identifier. This specifies the order for which a message is sent.
+ = amazon_selling_partner_api.null() #  | A marketplace identifier. This specifies the marketplace in which the order was placed. Only one marketplace can be specified.
 
 try:
     api_instance.confirm_customization_details(, )
@@ -76,14 +76,14 @@ Sends a message to a buyer to provide details about an Amazon Motors order. This
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.MessagingApi()
- = swagger_client.null() #  | An Amazon order identifier. This specifies the order for which a message is sent.
- = swagger_client.null() #  | A marketplace identifier. This specifies the marketplace in which the order was placed. Only one marketplace can be specified.
+api_instance = amazon_selling_partner_api.MessagingApi()
+ = amazon_selling_partner_api.null() #  | An Amazon order identifier. This specifies the order for which a message is sent.
+ = amazon_selling_partner_api.null() #  | A marketplace identifier. This specifies the marketplace in which the order was placed. Only one marketplace can be specified.
 
 try:
     api_instance.create_amazon_motors(, )
@@ -124,14 +124,14 @@ Sends a message to a buyer to arrange a delivery or to confirm contact informati
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.MessagingApi()
- = swagger_client.null() #  | An Amazon order identifier. This specifies the order for which a message is sent.
- = swagger_client.null() #  | A marketplace identifier. This specifies the marketplace in which the order was placed. Only one marketplace can be specified.
+api_instance = amazon_selling_partner_api.MessagingApi()
+ = amazon_selling_partner_api.null() #  | An Amazon order identifier. This specifies the order for which a message is sent.
+ = amazon_selling_partner_api.null() #  | A marketplace identifier. This specifies the marketplace in which the order was placed. Only one marketplace can be specified.
 
 try:
     api_instance.create_confirm_delivery_details(, )
@@ -172,14 +172,14 @@ Sends a message to ask a buyer an order-related question prior to shipping their
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.MessagingApi()
- = swagger_client.null() #  | An Amazon order identifier. This specifies the order for which a message is sent.
- = swagger_client.null() #  | A marketplace identifier. This specifies the marketplace in which the order was placed. Only one marketplace can be specified.
+api_instance = amazon_selling_partner_api.MessagingApi()
+ = amazon_selling_partner_api.null() #  | An Amazon order identifier. This specifies the order for which a message is sent.
+ = amazon_selling_partner_api.null() #  | A marketplace identifier. This specifies the marketplace in which the order was placed. Only one marketplace can be specified.
 
 try:
     api_instance.create_confirm_order_details(, )
@@ -220,14 +220,14 @@ Sends a message to contact a Home Service customer to arrange a service call or 
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.MessagingApi()
- = swagger_client.null() #  | An Amazon order identifier. This specifies the order for which a message is sent.
- = swagger_client.null() #  | A marketplace identifier. This specifies the marketplace in which the order was placed. Only one marketplace can be specified.
+api_instance = amazon_selling_partner_api.MessagingApi()
+ = amazon_selling_partner_api.null() #  | An Amazon order identifier. This specifies the order for which a message is sent.
+ = amazon_selling_partner_api.null() #  | A marketplace identifier. This specifies the marketplace in which the order was placed. Only one marketplace can be specified.
 
 try:
     api_instance.create_confirm_service_details(, )
@@ -268,14 +268,14 @@ Sends a message to a buyer to share a digital access key needed to utilize digit
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.MessagingApi()
- = swagger_client.null() #  | An Amazon order identifier. This specifies the order for which a message is sent.
- = swagger_client.null() #  | A marketplace identifier. This specifies the marketplace in which the order was placed. Only one marketplace can be specified.
+api_instance = amazon_selling_partner_api.MessagingApi()
+ = amazon_selling_partner_api.null() #  | An Amazon order identifier. This specifies the order for which a message is sent.
+ = amazon_selling_partner_api.null() #  | A marketplace identifier. This specifies the marketplace in which the order was placed. Only one marketplace can be specified.
 
 try:
     api_instance.create_digital_access_key(, )
@@ -316,14 +316,14 @@ Sends a critical message that contains documents that a seller is legally obliga
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.MessagingApi()
- = swagger_client.null() #  | An Amazon order identifier. This specifies the order for which a message is sent.
- = swagger_client.null() #  | A marketplace identifier. This specifies the marketplace in which the order was placed. Only one marketplace can be specified.
+api_instance = amazon_selling_partner_api.MessagingApi()
+ = amazon_selling_partner_api.null() #  | An Amazon order identifier. This specifies the order for which a message is sent.
+ = amazon_selling_partner_api.null() #  | A marketplace identifier. This specifies the marketplace in which the order was placed. Only one marketplace can be specified.
 
 try:
     api_instance.create_legal_disclosure(, )
@@ -364,14 +364,14 @@ Sends a non-critical message that asks a buyer to remove their negative feedback
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.MessagingApi()
- = swagger_client.null() #  | An Amazon order identifier. This specifies the order for which a message is sent.
- = swagger_client.null() #  | A marketplace identifier. This specifies the marketplace in which the order was placed. Only one marketplace can be specified.
+api_instance = amazon_selling_partner_api.MessagingApi()
+ = amazon_selling_partner_api.null() #  | An Amazon order identifier. This specifies the order for which a message is sent.
+ = amazon_selling_partner_api.null() #  | A marketplace identifier. This specifies the marketplace in which the order was placed. Only one marketplace can be specified.
 
 try:
     api_instance.create_negative_feedback_removal(, )
@@ -412,14 +412,14 @@ Sends a critical message to a buyer that an unexpected problem was encountered a
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.MessagingApi()
- = swagger_client.null() #  | An Amazon order identifier. This specifies the order for which a message is sent.
- = swagger_client.null() #  | A marketplace identifier. This specifies the marketplace in which the order was placed. Only one marketplace can be specified.
+api_instance = amazon_selling_partner_api.MessagingApi()
+ = amazon_selling_partner_api.null() #  | An Amazon order identifier. This specifies the order for which a message is sent.
+ = amazon_selling_partner_api.null() #  | A marketplace identifier. This specifies the marketplace in which the order was placed. Only one marketplace can be specified.
 
 try:
     api_instance.create_unexpected_problem(, )
@@ -460,14 +460,14 @@ Sends a message to a buyer to provide details about warranty information on a pu
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.MessagingApi()
- = swagger_client.null() #  | An Amazon order identifier. This specifies the order for which a message is sent.
- = swagger_client.null() #  | A marketplace identifier. This specifies the marketplace in which the order was placed. Only one marketplace can be specified.
+api_instance = amazon_selling_partner_api.MessagingApi()
+ = amazon_selling_partner_api.null() #  | An Amazon order identifier. This specifies the order for which a message is sent.
+ = amazon_selling_partner_api.null() #  | A marketplace identifier. This specifies the marketplace in which the order was placed. Only one marketplace can be specified.
 
 try:
     api_instance.create_warranty(, )
@@ -508,14 +508,14 @@ Returns a response containing attributes related to an order. This includes buye
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.MessagingApi()
- = swagger_client.null() #  | An Amazon order identifier. This specifies the order for which a message is sent.
- = swagger_client.null() #  | A marketplace identifier. This specifies the marketplace in which the order was placed. Only one marketplace can be specified.
+api_instance = amazon_selling_partner_api.MessagingApi()
+ = amazon_selling_partner_api.null() #  | An Amazon order identifier. This specifies the order for which a message is sent.
+ = amazon_selling_partner_api.null() #  | A marketplace identifier. This specifies the marketplace in which the order was placed. Only one marketplace can be specified.
 
 try:
     api_instance.get_attributes(, )
@@ -556,14 +556,14 @@ Returns a list of message types that are available for an order that you specify
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.MessagingApi()
- = swagger_client.null() #  | An Amazon order identifier. This specifies the order for which you want a list of available message types.
- = swagger_client.null() #  | A marketplace identifier. This specifies the marketplace in which the order was placed. Only one marketplace can be specified.
+api_instance = amazon_selling_partner_api.MessagingApi()
+ = amazon_selling_partner_api.null() #  | An Amazon order identifier. This specifies the order for which you want a list of available message types.
+ = amazon_selling_partner_api.null() #  | A marketplace identifier. This specifies the marketplace in which the order was placed. Only one marketplace can be specified.
 
 try:
     api_instance.get_messaging_actions_for_order(, )

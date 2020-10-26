@@ -1,4 +1,4 @@
-# swagger_client.AuthorizationApi
+# amazon_selling_partner_api.AuthorizationApi
 
 All URIs are relative to */*
 
@@ -17,15 +17,15 @@ With the getAuthorizationCode operation, you can request a Login With Amazon (LW
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.AuthorizationApi()
- = swagger_client.null() #  | The seller ID of the seller for whom you are requesting Selling Partner API authorization. This must be the seller ID of the seller who authorized your application on the Marketplace Appstore.
- = swagger_client.null() #  | Your developer ID. This must be one of the developer ID values that you provided when you registered your application in Developer Central.
- = swagger_client.null() #  | The MWS Auth Token that was generated when the seller authorized your application on the Marketplace Appstore.
+api_instance = amazon_selling_partner_api.AuthorizationApi()
+ = amazon_selling_partner_api.null() #  | The seller ID of the seller for whom you are requesting Selling Partner API authorization. This must be the seller ID of the seller who authorized your application on the Marketplace Appstore.
+ = amazon_selling_partner_api.null() #  | Your developer ID. This must be one of the developer ID values that you provided when you registered your application in Developer Central.
+ = amazon_selling_partner_api.null() #  | The MWS Auth Token that was generated when the seller authorized your application on the Marketplace Appstore.
 
 try:
     # Returns the Login with Amazon (LWA) authorization code for an existing Amazon MWS authorization.

@@ -14,16 +14,16 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from api.shipping_api import ShippingApi  # noqa: E501
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.api.shipping_api import ShippingApi  # noqa: E501
+from amazon_selling_partner_api.rest import ApiException
 
 
 class TestShippingApi(unittest.TestCase):
     """ShippingApi unit test stubs"""
 
     def setUp(self):
-        self.api = api.shipping_api.ShippingApi()  # noqa: E501
+        self.api = ShippingApi()  # noqa: E501
 
     def tearDown(self):
         pass

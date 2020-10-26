@@ -1,4 +1,4 @@
-# swagger_client.UploadsApi
+# amazon_selling_partner_api.UploadsApi
 
 All URIs are relative to */*
 
@@ -17,16 +17,16 @@ Creates an upload destination for a resource that you specify and returns the in
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.UploadsApi()
- = swagger_client.null() #  | A list of marketplace identifiers. This specifies the marketplaces where the upload will be available. Only one marketplace can be specified.
- = swagger_client.null() #  | An MD5 hash of the content to be submitted to the upload destination. This value is used to determine if the data has been corrupted or tampered with during transit.
- = swagger_client.null() #  | The URL of the resource for the upload destination that you are creating. For example, to create an upload destination for a Buyer-Seller Messaging message, the {resource} would be /messaging and the path would be  /uploads/v1/uploadDestinations/messaging
- = swagger_client.null() #  | The content type of the file to be uploaded. (optional)
+api_instance = amazon_selling_partner_api.UploadsApi()
+ = amazon_selling_partner_api.null() #  | A list of marketplace identifiers. This specifies the marketplaces where the upload will be available. Only one marketplace can be specified.
+ = amazon_selling_partner_api.null() #  | An MD5 hash of the content to be submitted to the upload destination. This value is used to determine if the data has been corrupted or tampered with during transit.
+ = amazon_selling_partner_api.null() #  | The URL of the resource for the upload destination that you are creating. For example, to create an upload destination for a Buyer-Seller Messaging message, the {resource} would be /messaging and the path would be  /uploads/v1/uploadDestinations/messaging
+ = amazon_selling_partner_api.null() #  | The content type of the file to be uploaded. (optional)
 
 try:
     api_instance.create_upload_destination_for_resource(, , , =)

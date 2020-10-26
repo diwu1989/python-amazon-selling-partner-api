@@ -1,4 +1,4 @@
-# swagger_client.CatalogApi
+# amazon_selling_partner_api.CatalogApi
 
 All URIs are relative to */*
 
@@ -19,14 +19,14 @@ Returns a specified item and its attributes.  **Usage Plan:**  | Rate (requests 
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.CatalogApi()
- = swagger_client.null() #  | A marketplace identifier. Specifies the marketplace for the item.
- = swagger_client.null() #  | The Amazon Standard Identification Number (ASIN) of the item.
+api_instance = amazon_selling_partner_api.CatalogApi()
+ = amazon_selling_partner_api.null() #  | A marketplace identifier. Specifies the marketplace for the item.
+ = amazon_selling_partner_api.null() #  | The Amazon Standard Identification Number (ASIN) of the item.
 
 try:
     api_instance.get_catalog_item(, )
@@ -67,15 +67,15 @@ Returns the parent categories to which an item belongs, based on the specified A
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.CatalogApi()
- = swagger_client.null() #  | A marketplace identifier. Specifies the marketplace for the item.
- = swagger_client.null() #  | The Amazon Standard Identification Number (ASIN) of the item. (optional)
- = swagger_client.null() #  | Used to identify items in the given marketplace. SellerSKU is qualified by the seller's SellerId, which is included with every operation that you submit. (optional)
+api_instance = amazon_selling_partner_api.CatalogApi()
+ = amazon_selling_partner_api.null() #  | A marketplace identifier. Specifies the marketplace for the item.
+ = amazon_selling_partner_api.null() #  | The Amazon Standard Identification Number (ASIN) of the item. (optional)
+ = amazon_selling_partner_api.null() #  | Used to identify items in the given marketplace. SellerSKU is qualified by the seller's SellerId, which is included with every operation that you submit. (optional)
 
 try:
     api_instance.list_catalog_categories(, =, =)
@@ -117,20 +117,20 @@ Returns a list of items and their attributes, based on a search query or item id
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.CatalogApi()
- = swagger_client.null() #  | A marketplace identifier. Specifies the marketplace for which items are returned.
- = swagger_client.null() #  | Keyword(s) to use to search for items in the catalog. Example: 'harry potter books'. (optional)
- = swagger_client.null() #  | An identifier for the context within which the given search will be performed. A marketplace might provide mechanisms for constraining a search to a subset of potential items. For example, the retail marketplace allows queries to be constrained to a specific category. The QueryContextId parameter specifies such a subset. If it is omitted, the search will be performed using the default context for the marketplace, which will typically contain the largest set of items. (optional)
- = swagger_client.null() #  | Used to identify an item in the given marketplace. SellerSKU is qualified by the seller's SellerId, which is included with every operation that you submit. (optional)
- = swagger_client.null() #  | A 12-digit bar code used for retail packaging. (optional)
- = swagger_client.null() #  | A European article number that uniquely identifies the catalog item, manufacturer, and its attributes. (optional)
- = swagger_client.null() #  | The unique commercial book identifier used to identify books internationally. (optional)
- = swagger_client.null() #  | A Japanese article number that uniquely identifies the product, manufacturer, and its attributes. (optional)
+api_instance = amazon_selling_partner_api.CatalogApi()
+ = amazon_selling_partner_api.null() #  | A marketplace identifier. Specifies the marketplace for which items are returned.
+ = amazon_selling_partner_api.null() #  | Keyword(s) to use to search for items in the catalog. Example: 'harry potter books'. (optional)
+ = amazon_selling_partner_api.null() #  | An identifier for the context within which the given search will be performed. A marketplace might provide mechanisms for constraining a search to a subset of potential items. For example, the retail marketplace allows queries to be constrained to a specific category. The QueryContextId parameter specifies such a subset. If it is omitted, the search will be performed using the default context for the marketplace, which will typically contain the largest set of items. (optional)
+ = amazon_selling_partner_api.null() #  | Used to identify an item in the given marketplace. SellerSKU is qualified by the seller's SellerId, which is included with every operation that you submit. (optional)
+ = amazon_selling_partner_api.null() #  | A 12-digit bar code used for retail packaging. (optional)
+ = amazon_selling_partner_api.null() #  | A European article number that uniquely identifies the catalog item, manufacturer, and its attributes. (optional)
+ = amazon_selling_partner_api.null() #  | The unique commercial book identifier used to identify books internationally. (optional)
+ = amazon_selling_partner_api.null() #  | A Japanese article number that uniquely identifies the product, manufacturer, and its attributes. (optional)
 
 try:
     api_instance.list_catalog_items(, =, =, =, =, =, =, =)

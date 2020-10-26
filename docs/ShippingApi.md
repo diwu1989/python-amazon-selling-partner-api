@@ -1,4 +1,4 @@
-# swagger_client.ShippingApi
+# amazon_selling_partner_api.ShippingApi
 
 All URIs are relative to */*
 
@@ -25,13 +25,13 @@ Cancel a shipment by the given shipmentId.  **Usage Plan:**  | Rate (requests pe
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ShippingApi()
- = swagger_client.null() #  | 
+api_instance = amazon_selling_partner_api.ShippingApi()
+ = amazon_selling_partner_api.null() #  | 
 
 try:
     api_instance.cancel_shipment()
@@ -71,12 +71,12 @@ Create a new shipment.  **Usage Plan:**  | Rate (requests per second) | Burst | 
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ShippingApi()
+api_instance = amazon_selling_partner_api.ShippingApi()
 
 try:
     api_instance.create_shipment()
@@ -113,12 +113,12 @@ Verify if the current account is valid.  **Usage Plan:**  | Rate (requests per s
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ShippingApi()
+api_instance = amazon_selling_partner_api.ShippingApi()
 
 try:
     api_instance.get_account()
@@ -155,12 +155,12 @@ Get service rates.  **Usage Plan:**  | Rate (requests per second) | Burst | | --
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ShippingApi()
+api_instance = amazon_selling_partner_api.ShippingApi()
 
 try:
     api_instance.get_rates()
@@ -197,13 +197,13 @@ Return the entire shipment object for the shipmentId.  **Usage Plan:**  | Rate (
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ShippingApi()
- = swagger_client.null() #  | 
+api_instance = amazon_selling_partner_api.ShippingApi()
+ = amazon_selling_partner_api.null() #  | 
 
 try:
     api_instance.get_shipment()
@@ -243,13 +243,13 @@ Return the tracking information of a shipment.  **Usage Plan:**  | Rate (request
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ShippingApi()
- = swagger_client.null() #  | 
+api_instance = amazon_selling_partner_api.ShippingApi()
+ = amazon_selling_partner_api.null() #  | 
 
 try:
     api_instance.get_tracking_information()
@@ -289,13 +289,13 @@ Purchase shipping labels based on a given rate.  **Usage Plan:**  | Rate (reques
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ShippingApi()
- = swagger_client.null() #  | 
+api_instance = amazon_selling_partner_api.ShippingApi()
+ = amazon_selling_partner_api.null() #  | 
 
 try:
     api_instance.purchase_labels()
@@ -335,12 +335,12 @@ Purchase shipping labels.  **Usage Plan:**  | Rate (requests per second) | Burst
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ShippingApi()
+api_instance = amazon_selling_partner_api.ShippingApi()
 
 try:
     api_instance.purchase_shipment()
@@ -377,14 +377,14 @@ Retrieve shipping label based on the shipment id and tracking id.  **Usage Plan:
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ShippingApi()
- = swagger_client.null() #  | 
- = swagger_client.null() #  | 
+api_instance = amazon_selling_partner_api.ShippingApi()
+ = amazon_selling_partner_api.null() #  | 
+ = amazon_selling_partner_api.null() #  | 
 
 try:
     api_instance.retrieve_shipping_label(, )

@@ -1,4 +1,4 @@
-# swagger_client.SellersApi
+# amazon_selling_partner_api.SellersApi
 
 All URIs are relative to */*
 
@@ -17,12 +17,12 @@ Returns a list of marketplaces that the seller submitting the request can sell i
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SellersApi()
+api_instance = amazon_selling_partner_api.SellersApi()
 
 try:
     api_instance.get_marketplace_participations()

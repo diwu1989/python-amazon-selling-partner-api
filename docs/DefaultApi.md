@@ -1,4 +1,4 @@
-# swagger_client.DefaultApi
+# amazon_selling_partner_api.DefaultApi
 
 All URIs are relative to */*
 
@@ -20,16 +20,16 @@ Returns financial event groups for a given date range.  **Usage Plan:**  | Rate 
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi()
- = swagger_client.null() #  | The maximum number of results to return per page. (optional)
- = swagger_client.null() #  | A date used for selecting financial event groups that opened before (but not at) a specified date and time, in ISO 8601 format. The date-time  must be later than FinancialEventGroupStartedAfter and no later than two minutes before the request was submitted. If FinancialEventGroupStartedAfter and FinancialEventGroupStartedBefore are more than 180 days apart, no financial event groups are returned. (optional)
- = swagger_client.null() #  | A date used for selecting financial event groups that opened after (or at) a specified date and time, in ISO 8601 format. The date-time must be no later than two minutes before the request was submitted. (optional)
- = swagger_client.null() #  | A string token returned in the response of your previous request. (optional)
+api_instance = amazon_selling_partner_api.DefaultApi()
+ = amazon_selling_partner_api.null() #  | The maximum number of results to return per page. (optional)
+ = amazon_selling_partner_api.null() #  | A date used for selecting financial event groups that opened before (but not at) a specified date and time, in ISO 8601 format. The date-time  must be later than FinancialEventGroupStartedAfter and no later than two minutes before the request was submitted. If FinancialEventGroupStartedAfter and FinancialEventGroupStartedBefore are more than 180 days apart, no financial event groups are returned. (optional)
+ = amazon_selling_partner_api.null() #  | A date used for selecting financial event groups that opened after (or at) a specified date and time, in ISO 8601 format. The date-time must be no later than two minutes before the request was submitted. (optional)
+ = amazon_selling_partner_api.null() #  | A string token returned in the response of your previous request. (optional)
 
 try:
     api_instance.list_financial_event_groups(=, =, =, =)
@@ -72,16 +72,16 @@ Returns financial events for the specified data range.  **Usage Plan:**  | Rate 
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi()
- = swagger_client.null() #  | The maximum number of results to return per page. (optional)
- = swagger_client.null() #  | A date used for selecting financial events posted after (or at) a specified time. The date-time must be no later than two minutes before the request was submitted, in ISO 8601 date time format. (optional)
- = swagger_client.null() #  | A date used for selecting financial events posted before (but not at) a specified time. The date-time must be later than PostedAfter and no later than two minutes before the request was submitted, in ISO 8601 date time format. If PostedAfter and PostedBefore are more than 180 days apart, no financial events are returned. You must specify the PostedAfter parameter if you specify the PostedBefore parameter. Default: Now minus two minutes. (optional)
- = swagger_client.null() #  | A string token returned in the response of your previous request. (optional)
+api_instance = amazon_selling_partner_api.DefaultApi()
+ = amazon_selling_partner_api.null() #  | The maximum number of results to return per page. (optional)
+ = amazon_selling_partner_api.null() #  | A date used for selecting financial events posted after (or at) a specified time. The date-time must be no later than two minutes before the request was submitted, in ISO 8601 date time format. (optional)
+ = amazon_selling_partner_api.null() #  | A date used for selecting financial events posted before (but not at) a specified time. The date-time must be later than PostedAfter and no later than two minutes before the request was submitted, in ISO 8601 date time format. If PostedAfter and PostedBefore are more than 180 days apart, no financial events are returned. You must specify the PostedAfter parameter if you specify the PostedBefore parameter. Default: Now minus two minutes. (optional)
+ = amazon_selling_partner_api.null() #  | A string token returned in the response of your previous request. (optional)
 
 try:
     api_instance.list_financial_events(=, =, =, =)
@@ -124,15 +124,15 @@ Returns all financial events for the specified financial event group.  **Usage P
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi()
- = swagger_client.null() #  | The identifier of the financial event group to which the events belong.
- = swagger_client.null() #  | The maximum number of results to return per page. (optional)
- = swagger_client.null() #  | A string token returned in the response of your previous request. (optional)
+api_instance = amazon_selling_partner_api.DefaultApi()
+ = amazon_selling_partner_api.null() #  | The identifier of the financial event group to which the events belong.
+ = amazon_selling_partner_api.null() #  | The maximum number of results to return per page. (optional)
+ = amazon_selling_partner_api.null() #  | A string token returned in the response of your previous request. (optional)
 
 try:
     api_instance.list_financial_events_by_group_id(, =, =)
@@ -174,15 +174,15 @@ Returns all financial events for the specified order.  **Usage Plan:**  | Rate (
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi()
- = swagger_client.null() #  | An Amazon-defined order identifier, in 3-7-7 format.
- = swagger_client.null() #  | The maximum number of results to return per page. (optional)
- = swagger_client.null() #  | A string token returned in the response of your previous request. (optional)
+api_instance = amazon_selling_partner_api.DefaultApi()
+ = amazon_selling_partner_api.null() #  | An Amazon-defined order identifier, in 3-7-7 format.
+ = amazon_selling_partner_api.null() #  | The maximum number of results to return per page. (optional)
+ = amazon_selling_partner_api.null() #  | A string token returned in the response of your previous request. (optional)
 
 try:
     api_instance.list_financial_events_by_order_id(, =, =)

@@ -1,4 +1,4 @@
-# swagger_client.SmallAndLightApi
+# amazon_selling_partner_api.SmallAndLightApi
 
 All URIs are relative to */*
 
@@ -21,14 +21,14 @@ Removes the item indicated by the specified seller SKU from the Small and Light 
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SmallAndLightApi()
- = swagger_client.null() #  | The seller SKU that identifies the item.
- = swagger_client.null() #  | The marketplace in which to remove the item from the Small and Light program. Note: Accepts a single marketplace only.
+api_instance = amazon_selling_partner_api.SmallAndLightApi()
+ = amazon_selling_partner_api.null() #  | The seller SKU that identifies the item.
+ = amazon_selling_partner_api.null() #  | The marketplace in which to remove the item from the Small and Light program. Note: Accepts a single marketplace only.
 
 try:
     api_instance.delete_small_and_light_enrollment_by_seller_sku(, )
@@ -69,14 +69,14 @@ Returns the Small and Light program eligibility status of the item indicated by 
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SmallAndLightApi()
- = swagger_client.null() #  | The seller SKU that identifies the item.
- = swagger_client.null() #  | The marketplace for which the eligibility status is retrieved. NOTE: Accepts a single marketplace only.
+api_instance = amazon_selling_partner_api.SmallAndLightApi()
+ = amazon_selling_partner_api.null() #  | The seller SKU that identifies the item.
+ = amazon_selling_partner_api.null() #  | The marketplace for which the eligibility status is retrieved. NOTE: Accepts a single marketplace only.
 
 try:
     api_instance.get_small_and_light_eligibility_by_seller_sku(, )
@@ -117,14 +117,14 @@ Returns the Small and Light enrollment status for the item indicated by the spec
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SmallAndLightApi()
- = swagger_client.null() #  | The seller SKU that identifies the item.
- = swagger_client.null() #  | The marketplace for which the enrollment status is retrieved. Note: Accepts a single marketplace only.
+api_instance = amazon_selling_partner_api.SmallAndLightApi()
+ = amazon_selling_partner_api.null() #  | The seller SKU that identifies the item.
+ = amazon_selling_partner_api.null() #  | The marketplace for which the enrollment status is retrieved. Note: Accepts a single marketplace only.
 
 try:
     api_instance.get_small_and_light_enrollment_by_seller_sku(, )
@@ -165,12 +165,12 @@ Returns the Small and Light fee estimates for the specified items. You must incl
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SmallAndLightApi()
+api_instance = amazon_selling_partner_api.SmallAndLightApi()
 
 try:
     api_instance.get_small_and_light_fee_preview()
@@ -207,14 +207,14 @@ Enrolls the item indicated by the specified seller SKU in the Small and Light pr
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import amazon_selling_partner_api
+from amazon_selling_partner_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SmallAndLightApi()
- = swagger_client.null() #  | The seller SKU that identifies the item.
- = swagger_client.null() #  | The marketplace in which to enroll the item. Note: Accepts a single marketplace only.
+api_instance = amazon_selling_partner_api.SmallAndLightApi()
+ = amazon_selling_partner_api.null() #  | The seller SKU that identifies the item.
+ = amazon_selling_partner_api.null() #  | The marketplace in which to enroll the item. Note: Accepts a single marketplace only.
 
 try:
     api_instance.put_small_and_light_enrollment_by_seller_sku(, )
